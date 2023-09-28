@@ -35,15 +35,25 @@ export default function Entry( { itemData } ) {
           <p>{itemData.dessert1} </p>
           <div className = "mt-3">
           <h7>Preview their Dessert Menu</h7>
-            <ul className = "col-3">
-                {itemData.dessertList && itemData.dessertList.map(
-            ({id, dessert}) => (
+            
+            <ul className = "">
+              <li>
+                {itemData.desserts[0]}
+                </li>
+              <li>
+                {itemData.desserts[1]}
+                </li>
+            <li>
+                {itemData.desserts[2]}
+                </li>
+                {/* {itemData.desserts && itemData.desserts.map(
+            ({id}) => (
               <li key={id}>
-                {dessert}
+                {itemData.desserts}
                 </li>
             )
           )
-        }
+        } */}
             </ul>
             </div>
         </div>
