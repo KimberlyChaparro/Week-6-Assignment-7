@@ -32,6 +32,7 @@ export default function Entry( { itemData } ) {
           <h5 className="card-title">{itemData.name}</h5>
           <h6 className="card-subtitle mb-2 text-body-secondary">{itemData.phone}</h6>
           <a href={itemData.website} className="card-link link-primary">{itemData.website}</a>
+          <p>{itemData.dessert1} </p>
           <div className = "mt-3">
           <h7>Preview their Dessert Menu</h7>
             <ul className = "col-3">
