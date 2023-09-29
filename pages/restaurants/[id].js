@@ -32,12 +32,18 @@ export default function Entry( { itemData } ) {
           <h5 className="card-title">{itemData.name}</h5>
           <h6 className="card-subtitle mb-2 text-body-secondary">{itemData.phone}</h6>
           <a href={itemData.website} className="card-link link-primary">{itemData.website}</a>
-          <p>{itemData.dessert1} </p>
+          
+        
           <div className = "mt-3">
           <h7>Preview their Dessert Menu</h7>
+            <ul className = "col-3">
+            <li> {itemData.dessert1}</li>
+            <li> {itemData.dessert2}</li>
+            <li> {itemData.dessert3}</li>
+            </ul>
             
-            <ul className = "">
-              <li>
+            <ul className = "col-3">
+              {/* <li>
                 {itemData.desserts[0]}
                 </li>
               <li>
@@ -45,7 +51,7 @@ export default function Entry( { itemData } ) {
                 </li>
             <li>
                 {itemData.desserts[2]}
-                </li>
+                </li> */}
                 {/* {itemData.desserts && itemData.desserts.map(
             ({id}) => (
               <li key={id}>
